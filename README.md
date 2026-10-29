@@ -67,7 +67,9 @@ and the per-class counts.
 ## Limits
 
 - The photo model knows 15 device types, all with batteries. It cannot tell that an item has no battery; for items it
-  does not recognise, the question decides.
+  does not recognise, the question decides. We tried to catch unfamiliar items by measuring how far a photo's embedding sits
+  from the training photos (nearest photo and class means, on 960- and 1280-d features), but X-ray images, a very different
+  kind of picture, still passed 60-91% of the time, so the app relies on its confidence threshold and the question.
 - All X-rays come from one scanner (NTB EZ-240) and all photos from one webcam setup. Other scanners and phone photos
   will differ; a deployment would need images from its own line to check the numbers.
 - CellSpot gives disposal advice from the US EPA's general guidance. Local rules vary.
