@@ -35,6 +35,7 @@ function h(tag, attrs = {}, ...children) {
 }
 
 const pct = (x) => `${Math.round(x * 100)}%`;
+const an = (word) => (/^[aeiou]/i.test(word) ? 'an' : 'a');
 
 /* ---------- views ---------- */
 
@@ -131,8 +132,8 @@ function batteryCard(thumb, name, confidence, onWrong) {
   return h('div', { class: 'card' },
     h('div', { class: 'verdict battery' }, 'Battery inside: keep it out of the trash and recycling bins.'),
     h('div', { class: 'card-photo' }, thumb,
-      h('p', { class: 'what' }, name ? ['Looks like a ', h('strong', {}, name), ` (${pct(confidence)} sure). `] : 'You said it charges, lights up, makes a sound or has a screen. ',
-        name ? h('button', { class: 'linkish', type: 'button', onclick: onWrong }, `Not a ${name}?`) : null)),
+      h('p', { class: 'what' }, name ? [`Looks like ${an(name)} `, h('strong', {}, name), ` (${pct(confidence)} sure). `] : 'You said it charges, lights up, makes a sound or has a screen. ',
+        name ? h('button', { class: 'linkish', type: 'button', onclick: onWrong }, `Not ${an(name)} ${name}?`) : null)),
     h('ol', { class: 'steps' },
       h('li', {}, 'If the battery comes out easily, take it out. If it is built in, leave it in.'),
       h('li', {}, 'Tape the ends of a loose battery, or put it in its own plastic bag.'),
@@ -185,7 +186,7 @@ async function checkImage(source, label) {
   }));
   if (probs[best] >= CONFIDENT) {
     const name = NAMES[RGB_CLASSES[best]];
-    out.replaceChildren(batteryCard(thumb(), name, probs[best], () => ask(`Not a ${name}.`)));
+    out.replaceChildren(batteryCard(thumb(), name, probs[best], () => ask(`Not ${an(name)} ${name}.`)));
   } else {
     ask('Not sure what this is.');
   }
@@ -320,7 +321,7 @@ async function scanXray(source, opts = {}) {
     drawBoxes(dets);
     const { node, pulled } = decisionView(dets, meta.threshold, opts.truth);
     box.replaceChildren(node);
-    $('#xray-canvas').setAttribute('aria-label', `X-ray${opts.label ? ` of a ${opts.label}` : ''}. ${pulled ? 'Battery found.' : 'No battery seen.'}`);
+    $('#xray-canvas').setAttribute('aria-label', `X-ray${opts.label ? ` of ${an(opts.label)} ${opts.label}` : ''}. ${pulled ? 'Battery found.' : 'No battery seen.'}`);
     bumpTally(pulled);
     return pulled;
   } catch (e) {
