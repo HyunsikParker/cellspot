@@ -187,7 +187,7 @@ h1 { font-size: clamp(28px, 6vw, 40px); line-height: 1.1; letter-spacing: -0.02e
 .summary:empty { display: none; }
 
 /* Results */
-.results-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+.results-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); align-items: start; }
 .results-grid .card { padding: 18px; }
 .results-grid h2 { font-size: 20px; margin: 0 0 4px; }
 .results-grid .sub { margin: 0 0 14px; color: var(--ink-2); font-size: 15px; }
