@@ -1,0 +1,7 @@
+{
+  "name": "cellspot-web",
+  "private": true,
+  "devDependencies": {
+    "onnxruntime-web": "1.30.0"
+  }
+}

@@ -1,0 +1,121 @@
+{
+ "source": "XBAT+ 1.0 test splits (Zenodo 18022530, CC BY 4.0)",
+ "check": [
+  {
+   "file": "mobilephone.jpg",
+   "device": "MobilePhone",
+   "source": "0028_jpg.rf.fec93570f38c4e151480d4be369be77c.jpg"
+  },
+  {
+   "file": "remotecontrol.jpg",
+   "device": "RemoteControl",
+   "source": "0074_jpg.rf.d2f2a0b6cf28942b0088cc85460402a4.jpg"
+  },
+  {
+   "file": "e-toothbrush.jpg",
+   "device": "E-Toothbrush",
+   "source": "0098_jpg.rf.d048444bee616dc62c8b9a857a93852b.jpg"
+  },
+  {
+   "file": "kidtoy.jpg",
+   "device": "KidToy",
+   "source": "0351_s_jpg.rf.7068aebe593eaa12cc0b54075f4ffdff.jpg"
+  },
+  {
+   "file": "gamecontroller.jpg",
+   "device": "GameController",
+   "source": "0019_jpg.rf.8eb3c17711c2b6ad39ffd8a7d8e98b0a.jpg"
+  },
+  {
+   "file": "firealarm.jpg",
+   "device": "FireAlarm",
+   "source": "0084_jpg.rf.aaf93b82d12765767cc57a6fdc55ac04.jpg"
+  }
+ ],
+ "xray": [
+  {
+   "file": "xray-01.jpg",
+   "device": "iPad",
+   "battery": true,
+   "empty_compartment": false,
+   "source": "0016_20_80_T_bmp.rf.dc8c905734b5e345b30416023d6bc0f5.jpg"
+  },
+  {
+   "file": "xray-02.jpg",
+   "device": "MobilePhone",
+   "battery": true,
+   "empty_compartment": false,
+   "source": "0028_20_60_T_bmp.rf.93acef1aca8581d592d6f6785212399f.jpg"
+  },
+  {
+   "file": "xray-03.jpg",
+   "device": "NightTorch",
+   "battery": true,
+   "empty_compartment": false,
+   "source": "0062_20_66_T_bmp.rf.6080ad879d7d0dbd2fe020974d4ccbd8.jpg"
+  },
+  {
+   "file": "xray-04.jpg",
+   "device": "RemoteControl",
+   "battery": true,
+   "empty_compartment": false,
+   "source": "0074_20_56_T_bmp.rf.793d123d17ebeb084c808f9fc2ae27c9.jpg"
+  },
+  {
+   "file": "xray-05.jpg",
+   "device": "FireAlarm",
+   "battery": true,
+   "empty_compartment": false,
+   "source": "0085_20_56_T_bmp.rf.0ba2c95fc4c7e1b078d86ef0f7053c41.jpg"
+  },
+  {
+   "file": "xray-06.jpg",
+   "device": "PhotoCamera",
+   "battery": true,
+   "empty_compartment": false,
+   "source": "0103_20_56_S_bmp.rf.2aca97de8589bfea603c328ad7dfbf6c.jpg"
+  },
+  {
+   "file": "xray-07.jpg",
+   "device": "FlashLight",
+   "battery": true,
+   "empty_compartment": false,
+   "source": "0112_20_56_S_bmp.rf.d90bd00ed90c2de23e62558128bb8744.jpg"
+  },
+  {
+   "file": "xray-08.jpg",
+   "device": "Thermometer",
+   "battery": true,
+   "empty_compartment": false,
+   "source": "0114_20_56_S_bmp.rf.074cb1b13596f58cdaec4deb8adf89a5.jpg"
+  },
+  {
+   "file": "xray-09.jpg",
+   "device": "GameController",
+   "battery": false,
+   "empty_compartment": false,
+   "source": "0019_20_70_T_bmp.rf.0feedeb9f7088a5e3e5860c02ef27faf.jpg"
+  },
+  {
+   "file": "xray-10.jpg",
+   "device": "ComputerMouse",
+   "battery": false,
+   "empty_compartment": true,
+   "source": "0069_20_56_T_bmp.rf.5501afe5e75c80689336971b3817aa9d.jpg"
+  },
+  {
+   "file": "xray-11.jpg",
+   "device": "FireAlarm",
+   "battery": false,
+   "empty_compartment": true,
+   "source": "0084_20_56_T_bmp.rf.38782fac4a0bd3fe301232a9908d5989.jpg"
+  },
+  {
+   "file": "xray-12.jpg",
+   "device": "NightTorch",
+   "battery": false,
+   "empty_compartment": true,
+   "source": "0089_20_66_T_bmp.rf.baac61202f1d805d91d100a0bc092275.jpg"
+  }
+ ]
+}

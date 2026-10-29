@@ -1,0 +1,402 @@
+{
+ "settings": {
+  "lr": 0.001,
+  "size": 224,
+  "balance": 1.0
+ },
+ "chosen_epochs": 23,
+ "validation_at_choice": {
+  "epoch": 23,
+  "loss": 0.6189,
+  "s": 1.7,
+  "val_accuracy": 0.7,
+  "val_macro_recall": 0.6605
+ },
+ "test": {
+  "n": 91,
+  "accuracy": 0.8022,
+  "top2": 0.9011,
+  "macro_recall": 0.6407,
+  "per_class": {
+   "AlarmClock": {
+    "n": 2,
+    "recall": 0.5
+   },
+   "ComputerMouse": {
+    "n": 3,
+    "recall": 0.667
+   },
+   "E-Razor": {
+    "n": 3,
+    "recall": 0.667
+   },
+   "E-Toothbrush": {
+    "n": 3,
+    "recall": 0.667
+   },
+   "FireAlarm": {
+    "n": 4,
+    "recall": 1.0
+   },
+   "FlashLight": {
+    "n": 2,
+    "recall": 0.0
+   },
+   "GameController": {
+    "n": 3,
+    "recall": 0.667
+   },
+   "iPad": {
+    "n": 6,
+    "recall": 1.0
+   },
+   "KidToy": {
+    "n": 4,
+    "recall": 1.0
+   },
+   "MobilePhone": {
+    "n": 21,
+    "recall": 0.81
+   },
+   "NewsRadio": {
+    "n": 2,
+    "recall": 0.5
+   },
+   "NightTorch": {
+    "n": 4,
+    "recall": 0.5
+   },
+   "PhotoCamera": {
+    "n": 3,
+    "recall": 0.667
+   },
+   "RemoteControl": {
+    "n": 29,
+    "recall": 0.966
+   },
+   "Thermometer": {
+    "n": 2,
+    "recall": 0.0
+   }
+  },
+  "confusion": [
+   [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    2,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    1,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    6,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    4,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    17,
+    0,
+    1,
+    0,
+    1,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    2,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    28,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+   ]
+  ]
+ },
+ "classes": [
+  "AlarmClock",
+  "ComputerMouse",
+  "E-Razor",
+  "E-Toothbrush",
+  "FireAlarm",
+  "FlashLight",
+  "GameController",
+  "iPad",
+  "KidToy",
+  "MobilePhone",
+  "NewsRadio",
+  "NightTorch",
+  "PhotoCamera",
+  "RemoteControl",
+  "Thermometer"
+ ],
+ "train_images": 330,
+ "test_images": 91,
+ "app_rule": {
+  "threshold": 0.6,
+  "photos": 91,
+  "named": 65,
+  "named_wrong": 8,
+  "asked": 26
+ },
+ "selection": {
+  "rule": "highest 5-fold device-disjoint cross-validation mean of best-epoch macro recall on the training devices; within 0.01, higher mean accuracy",
+  "candidates": {
+   "a": {
+    "settings": {
+     "lr": 0.0005,
+     "size": 224,
+     "balance": 0.5
+    },
+    "folds": 5,
+    "mean_best_macro_recall": 0.6196,
+    "mean_best_accuracy": 0.7833
+   },
+   "b": {
+    "settings": {
+     "lr": 0.001,
+     "size": 224,
+     "balance": 1.0
+    },
+    "folds": 5,
+    "mean_best_macro_recall": 0.6493,
+    "mean_best_accuracy": 0.7878
+   },
+   "e": {
+    "settings": {
+     "lr": 0.0003,
+     "size": 256,
+     "balance": 0.75
+    },
+    "folds": 5,
+    "mean_best_macro_recall": 0.6227,
+    "mean_best_accuracy": 0.8035
+   }
+  },
+  "chosen": "b"
+ }
+}
