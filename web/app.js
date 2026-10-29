@@ -359,7 +359,10 @@ async function runAll() {
     const m = await getManifest();
     const buttons = [...document.querySelectorAll('#xray-samples .sample')];
     const pulled = [];
-    for (const [i, b] of buttons.entries()) pulled.push(await pickXray(i, b));
+    for (const [i, b] of buttons.entries()) {
+      pulled.push(await pickXray(i, b));
+      await new Promise((r) => setTimeout(r, 700)); // long enough to read each decision before the next X-ray
+    }
     // An honest read of this small set against its labels; the Results view has the full test set.
     const withBattery = m.xray.map((s, i) => [s.battery, pulled[i]]);
     const yes = withBattery.filter(([t]) => t);
